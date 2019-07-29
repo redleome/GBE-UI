@@ -1,6 +1,7 @@
 # gbe-ui
 
-## Project setup, create the development folder as needed. Within the folder do the ff. setup:
+## Project setup.
+#Create the development folder as needed. Within the folder do the ff. setup:
 
 #1: npm init to create a package.json file
 ```
