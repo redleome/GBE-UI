@@ -1,2 +1,9 @@
 body {
-  background: #f00; }
+  background: #fff; }
+
+*, html {
+  padding: 0;
+  margin: 0; }
+
+.col-3, .col-6 {
+  border: solid; }

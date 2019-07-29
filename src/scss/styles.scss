@@ -1,5 +1,15 @@
-$bg-color: #f00; 
+$bg-color: #fff;
 
 body {
     background: $bg-color;
+}
+
+// Scraps - Just for testing
+*,html{
+  padding:0;
+  margin:0;
+}
+
+.col-3,.col-6{
+  border:solid;
 }
