@@ -41,4 +41,6 @@ npm install bootstrap jquery popper.js --save
 
 #4. Gulp setup updated version for Gulp 4.0: https://pastebin.com/aPKti6iB
 
-Setup Reference: https://coursetro.com/posts/code/130/Learn-Bootstrap-4-Final-in-2018-with-our-Free-Crash-Course
+Setup Reference:
+* Creating Bootstrap/HTML/SASS Setup: https://coursetro.com/posts/code/130/Learn-Bootstrap-4-Final-in-2018-with-our-Free-Crash-Course
+* Formatting GIT README: https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
