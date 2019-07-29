@@ -2,7 +2,20 @@
 
 ## Project setup
 
-Create the development folder as needed. Within the folder do the ff. setup:
+Create the development folder as needed.
+For this project we manually created the src folder:
+
+/src
+    /assets
+    /css
+    /js
+    /scss
+
+In the /src folder, create index.html
+
+------------
+
+Within the folder do the ff. setup:
 
 #1: npm init to create a package.json file
 ```
@@ -27,3 +40,5 @@ npm install bootstrap jquery popper.js --save
 -------------
 
 #4. Gulp setup updated version for Gulp 4.0: https://pastebin.com/aPKti6iB
+
+Setup Reference: https://coursetro.com/posts/code/130/Learn-Bootstrap-4-Final-in-2018-with-our-Free-Crash-Course
