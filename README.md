@@ -37,9 +37,9 @@ npm install bootstrap jquery popper.js --save
 * **jquery** is used by bootstrap.
 * **popper.js** is also used by bootstrap. It allows for positioning of popovers, tooltips, etc..
 
--------------
-
 #4. Gulp setup updated version for Gulp 4.0: https://pastebin.com/aPKti6iB
+
+-------------
 
 Setup Reference:
 * Creating Bootstrap/HTML/SASS Setup: https://coursetro.com/posts/code/130/Learn-Bootstrap-4-Final-in-2018-with-our-Free-Crash-Course
