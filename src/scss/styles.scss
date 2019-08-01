@@ -1,15 +1,26 @@
-$bg-color: #fff;
+@import "elements/icons"; // General settings
 
-body {
-    background: $bg-color;
+ul li {
+  margin: 0;
+  padding: 0;
 }
 
-// Scraps - Just for testing
-*,html{
-  padding:0;
-  margin:0;
+a{
+  cursor: pointer;
 }
 
-.col-3,.col-6{
-  border:solid;
+i{
+  padding:0 5px;
 }
+.navbar {
+  // padding: 0.5rem;
+}
+
+.navbar-nav {
+  flex-direction:row;
+  .nav-link {
+    padding-right: 0.5rem; //Increase Click Area.
+    padding-left: 0.5rem;
+  }
+}
+// Scraps for testing only
