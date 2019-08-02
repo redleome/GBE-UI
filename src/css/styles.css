@@ -9,3 +9,23 @@ ul li {
     padding-left: 0.5rem; }
   .navbar-nav i {
     padding: 0 5px; }
+
+.content-wrapper {
+  overflow-x: hidden; }
+
+#content {
+  transition: max-width .3s ease; }
+
+#sidenav {
+  /* for the animation */
+  transition: margin 0.3s ease; }
+
+.collapsed {
+  /* hide it for small displays*/
+  display: none; }
+
+@media (min-width: 992px) {
+  .collapsed {
+    display: block;
+    /* same width as sidebar */
+    margin-left: -25%; } }

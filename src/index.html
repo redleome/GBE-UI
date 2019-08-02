@@ -10,68 +10,70 @@
   <link id="cdn-style" rel="stylesheet" type="text/css" href="//cdn.privacy.telenordigital.com/latest/css/main.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<header id="telenor-top-header-menu" style="border:1px dashed gray;">
-  <div id="header-logo-wrap">
-    <a href="/">
-      <div class="logo no-padding"></div>
-    </a>
-  </div>
-  <nav role="navigation" class="navbar navbar-expand font-family-telenor font-weight-light" aria-label="Telenor menu">
-    <div class="container-fluid d-flex justify-content-between px-0 my-0 align-baseline">
-      <div>
-        <!-- LEFT -->
-        <ul class="navbar-nav">
-          <li class="nav-item" style="border:1px dashed #f00;">
-            <a id="menu" class="nav-link" href="#">
-              <i class="align-middle icon-telenor-Menu-small"></i>
-              <span class="d-none d-md-inline">Menu</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <!-- RIGHT -->
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown" style="border:1px dashed #f00;">
-            <a class="nav-link" href="test/index.html" data-toggle="dropdown" aria-expanded="false">
-              <span class="d-none d-md-inline">User</span>
-              <i class="align-middle icon-telenor-User-small"></i>
-            </a>
-            <!-- DROPDOWN MENU -->
-            <div aria-labelledby="navbarAccount" class="dropdown-menu dropdown-menu-right">
-              <a href="#" class="dropdown-item">Link</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div id="sidenav" class="col-2">
-        Testing
+  <header id="telenor-top-header-menu" style="border:1px dashed gray;">
+    <div id="header-logo-wrap">
+      <a href="/">
+        <div class="logo no-padding"></div>
+      </a>
+    </div>
+    <nav role="navigation" class="navbar navbar-expand font-family-telenor font-weight-light" aria-label="Telenor menu">
+      <div class="container-fluid d-flex justify-content-between px-0 my-0 align-baseline">
+        <div>
+          <!-- LEFT -->
+          <ul class="navbar-nav">
+            <li class="nav-item" style="border:1px dashed #f00;">
+              <a class="nav-link" id="menu" href="#">
+                <i class="align-middle icon-telenor-Menu-small"></i>
+                <span class="d-none d-md-inline">Menu</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <!-- RIGHT -->
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown" style="border:1px dashed #f00;">
+              <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                <span class="d-none d-md-inline">User</span>
+                <i class="align-middle icon-telenor-User-small"></i>
+              </a>
+              <!-- DROPDOWN MENU -->
+              <div aria-labelledby="navbarAccount" class="dropdown-menu dropdown-menu-right">
+                <a href="#" class="dropdown-item">Link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col" style="border:dotted #f00;">
+    </nav>
+  </header>
+
+  <div class="container-fluid content-wrapper">
+    <div class="row">
+      <div id="sidenav" class="col-3">
+        Side Menu Testing
+      </div>
+      <div id="content" class="col" style="border:dotted #f00;">
+        <!-- <div class="col" id="content" style="border:dotted #f0f;"> -->
         <div class="container" style="border:dotted 3px #000;">
           <div class="row">
-            <div class="col-4" style="border:dotted 1px #00f;">
+            <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
-            <div class="col-4" style="border:dotted 1px #00f;">
+            <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
-            <div class="col-4" style="border:dotted 1px #00f;">
+            <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
+
   <script src="/js/jquery.min.js"></script>
   <!-- <script src="/js/popper.min.js"></script>
   <script src="/js/bootstrap.min.js"></script> -->
