@@ -54,3 +54,8 @@ Setup Reference:
 
 The bug expands the entire horizontal menu when the dropdown is visible.
 Fix: https://github.com/twbs/bootstrap/issues/22270
+
+**Sidebar Nav reference **
+
+Hide/show sidenav, expand main content width
+Clue: https://cdn.rawgit.com/nunof07/bootstrap-collapsible-sidebar/v0.1.0/left.html
