@@ -50,8 +50,7 @@ Setup Reference:
 
 ## Fixed Common Bootstrap/SCSS Styleguide issues
 
-Menu issue with dropdown menu. The bug expands the entire horizontal menu when the dropdown is visible.
+**Nav issue with dropdown menu **.
 
-Fix:
-
-https://github.com/twbs/bootstrap/issues/22270
+The bug expands the entire horizontal menu when the dropdown is visible.
+Fix: https://github.com/twbs/bootstrap/issues/22270
