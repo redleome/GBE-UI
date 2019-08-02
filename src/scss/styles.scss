@@ -1,26 +1,17 @@
-@import "elements/icons"; // General settings
-
-ul li {
-  margin: 0;
-  padding: 0;
+//General
+ul li{
+  margin:0;
+  padding:0;
 }
 
-a{
-  cursor: pointer;
-}
-
-i{
-  padding:0 5px;
-}
-.navbar {
-  // padding: 0.5rem;
-}
-
+// Navigation
 .navbar-nav {
   flex-direction:row;
   .nav-link {
     padding-right: 0.5rem; //Increase Click Area.
     padding-left: 0.5rem;
   }
+  i{
+    padding:0 5px;
+  }
 }
-// Scraps for testing only

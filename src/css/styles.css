@@ -2,14 +2,10 @@ ul li {
   margin: 0;
   padding: 0; }
 
-a {
-  cursor: pointer; }
-
-i {
-  padding: 0 5px; }
-
 .navbar-nav {
   flex-direction: row; }
   .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem; }
+  .navbar-nav i {
+    padding: 0 5px; }
