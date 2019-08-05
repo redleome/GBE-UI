@@ -6,3 +6,7 @@ $("#menu").click(function(e) {
          $("#sidenav").toggleClass("collapsed");
         // $("#content").toggleClass("col-12 col-9");
 });
+
+$("#sidenav-close").click(function(e) {
+   $("#sidenav").toggleClass("collapsed");
+});

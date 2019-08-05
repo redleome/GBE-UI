@@ -1,48 +1,66 @@
-//General
-ul li{
-  margin:0;
-  padding:0;
-}
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints"; //General
 
+ul li {
+  margin: 0;
+  padding: 0;
+}
 // Navigation
 .navbar-nav {
-  flex-direction:row;
+  flex-direction: row;
+
   .nav-link {
     padding-right: 0.5rem; //Increase Click Area.
     padding-left: 0.5rem;
   }
-  i{
-    padding:0 5px;
+
+  i {
+    padding: 0 5px;
   }
 }
- //
- // .content-wrapper{
- //   overflow-x: hidden;
- // }
 
- #content{
-   transition: max-width .3s ease;
- }
- #sidenav {
+#content {
+  transition: max-width 0.3s ease;
+}
+
+#sidenav {
   /* for the animation */
-  border:solid;
+  border: solid;
   transition: margin 0.3s ease;
 }
 
-.col-md-4{
-  height:300px;
+.col-md-4 {
+  height: 300px;
 }
 
- .collapsed {
-   /* hide it for small displays*/
-   display: none;
- }
-
- @media (min-width: 992px) {
-   .collapsed {
-     display: block;
-     position: relative;
-     /* same width as sidebar */
-     margin-left: -25%;
-   }
- }
+.collapsed {
+  /* hide it for small displays*/
+  display: none;
+}
+@media (min-width: 992px) {
+  .collapsed {
+    display: block;
+    position: relative;
+    /* same width as sidebar */
+    margin-left: -25%;
+  }
+}
+@include media-breakpoint-down(sm) {
+  #sidenav {
+    position: fixed;
+    color: #000 !important;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    border: solid;
+    transition: margin 0.3s ease;
+    z-index: 999999;
+  }
+  .collapsed {
+    /* hide it for small displays*/
+    display: block;
+    position: relative;
+    margin-left: -100%;
+  }
+}
