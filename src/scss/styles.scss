@@ -26,6 +26,7 @@ ul li {
 
 #sidenav {
   /* for the animation */
+  position: relative;
   border: solid;
   transition: margin 0.3s ease;
 }
@@ -35,10 +36,11 @@ ul li {
 }
 
 .collapsed {
-  /* hide it for small displays*/
   display: none;
 }
-@media (min-width: 992px) {
+
+/* show side nav above this width*/
+@include media-breakpoint-up(md) {
   .collapsed {
     display: block;
     position: relative;
@@ -46,21 +48,24 @@ ul li {
     margin-left: -25%;
   }
 }
-@include media-breakpoint-down(sm) {
+
+// for mobile, side nave stays on right side over the content
+@include media-breakpoint-down(md) {
   #sidenav {
     position: fixed;
     color: #000 !important;
     top: 0;
     height: 100%;
+    min-width: 100%;
     background: #fff;
     border: solid;
     transition: margin 0.3s ease;
     z-index: 999999;
   }
-  .collapsed {
+  .collapsed { //expand display
     /* hide it for small displays*/
-    display: block;
-    position: relative;
-    margin-left: -100%;
+    display:block;
+    transition: margin 0.3s ease;
+    margin-left: -100% !important;
   }
 }
