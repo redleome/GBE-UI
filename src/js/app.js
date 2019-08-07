@@ -1,12 +1,16 @@
 $("#menu").click(function(e) {
-        e.preventDefault();
-        // $("#sidenav").toggleClass("d-none");
-        // $("#sidenav").toggleClass("d-none");
-        // $("#sidenav").toggleClass("col-2 d-none");
-         $("#sidenav").toggleClass("collapsed");
-        // $("#content").toggleClass("col-12 col-9");
+  e.preventDefault();
+  $("#sidenav").toggleClass("sidenav-collapsed");
 });
 
 $("#sidenav-close").click(function(e) {
-   $("#sidenav").toggleClass("collapsed");
+  $("#sidenav").toggleClass("sidenav-collapsed");
 });
+
+$(".expandable-section > header").click(function(e) {
+  $(this).parent('.expandable-section').toggleClass("expanded");
+});
+
+// $(".card-link").click(function(e) {
+//   $(this).child('collapse').toggleClass("show");
+// });

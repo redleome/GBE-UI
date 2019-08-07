@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- Header Main Navigation -->
   <header id="telenor-top-header-menu" style="border:1px dashed gray;">
     <div id="header-logo-wrap">
       <a href="/">
@@ -50,14 +51,69 @@
     </nav>
   </header>
 
+  <!-- Main Content Wrapper -->
   <div class="container-fluid content-wrapper h-100">
     <div class="row h-100">
-      <div id="sidenav" class="col-md-3 h-100">
-        Side Menu Testing
-        <a id="sidenav-close" href="#" aria-label="Close" class="close back-home position-absolute top right p-3"></a>
-      </div>
+      <!-- Side Navigation, occupy 30% space on web, 100% on mobile w/ float on top of main content -->
+      <div id="sidenav" class="col-xl-2 col-md-3 h-100">
+        <div class="row my-5">
+          <a href="#" id="sidenav-close" aria-label="Close" class="close back-home position-absolute top right m-3"></a>
+          <div class="col-12 plus-minus" style="margin-top:-1px;">
+            <div class="expandable-section" data-level="1">
+              <header>Connect ID</header>
+              <div class="expandable-content">
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+              </div>
+            </div>
+            <div class="expandable-section" data-level="1">
+              <header>Permission Service</header>
+              <div class="expandable-content">
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+              </div>
+            </div>
+            <div class="expandable-section" data-level="1">
+              <header>Offer API</header>
+              <div class="expandable-content">
+                <p>Paragraph1</p>
+                <p>Paragraph2</p>
+              </div>
+            </div>
+            <div class="card content-dropdown">
+                  <a class="card-header card-link" data-toggle="collapse" data-target="#f-r3-b" aria-expanded="false" aria-controls="f-r3-b">
+                    Category 2
+                  </a>
+                  <div class="collapse" id="f-r3-b">
+                    <div class="card-body">
+                      <ul class="link-list">
+                        <li><a href="#">Category Link</a></li>
+                        <li><a href="#">Category Link</a></li>
+                        <li><a href="#">Category Link</a></li>
+                        <li><a href="#">Category Link</a></li>
+                        <li><a href="#">Category Link</a></li>
+                        <li><a href="#">Category Link</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          </div><!-- col --->
+        </div><!-- row --->
+      </div><!-- container --->
+
+
+      <!-- Main Content, occupy remaining space -->
       <div id="content" class="col" style="border:dotted #f00;">
-        <!-- <div class="col" id="content" style="border:dotted #f0f;"> -->
         <div class="container" style="border:dotted 3px #000;">
           <div class="row">
             <div class="col-md-4" style="border:dotted 1px #00f;">
@@ -91,7 +147,8 @@
             <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
-          </div><div class="row">
+          </div>
+          <div class="row">
             <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
@@ -101,7 +158,8 @@
             <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
-          </div><div class="row">
+          </div>
+          <div class="row">
             <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
@@ -111,7 +169,8 @@
             <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
-          </div><div class="row">
+          </div>
+          <div class="row">
             <div class="col-md-4" style="border:dotted 1px #00f;">
               Test
             </div>
@@ -126,10 +185,11 @@
       </div>
     </div>
   </div>
+  </div>
 
   <script src="/js/jquery.min.js"></script>
-  <!-- <script src="/js/popper.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script> -->
+  <!-- <script src="/js/popper.min.js"></script>-->
+  <script src="/js/bootstrap.min.js"></script>
   <script src="/js/app.js"></script>
 </body>
 

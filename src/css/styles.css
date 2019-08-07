@@ -17,21 +17,33 @@ ul li {
   /* for the animation */
   position: relative;
   border: solid;
-  transition: margin 0.3s ease; }
+  transition: margin 0.3s ease;
+  overflow-y: scroll; }
 
 .col-md-4 {
   height: 300px; }
 
-.collapsed {
+.sidenav-collapsed {
   display: none; }
+
+.expandable-section, .faq {
+  border-color: #dbdbdb; }
+
+.expandable-section[data-level="1"] {
+  border-top: none; }
+
+.expandable-section .page-link,
+.expandable-section > header,
+.faq .page-link, .faq > header {
+  font-size: 1.125rem; }
 
 /* show side nav above this width*/
 @media (min-width: 768px) {
-  .collapsed {
+  .sidenav-collapsed {
     display: block;
     position: relative;
     /* same width as sidebar */
-    margin-left: -25%; } }
+    margin-left: -16.6%; } }
 
 @media (max-width: 991.98px) {
   #sidenav {
@@ -44,7 +56,7 @@ ul li {
     border: solid;
     transition: margin 0.3s ease;
     z-index: 999999; }
-  .collapsed {
+  .sidenav-collapsed {
     /* hide it for small displays*/
     display: block;
     transition: margin 0.3s ease;

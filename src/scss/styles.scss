@@ -29,23 +29,39 @@ ul li {
   position: relative;
   border: solid;
   transition: margin 0.3s ease;
+  overflow-y: scroll;
 }
 
 .col-md-4 {
   height: 300px;
 }
 
-.collapsed {
+.sidenav-collapsed {
   display: none;
+}
+
+// Side Nave Expand
+.expandable-section, .faq{
+  border-color: #dbdbdb; //Note: Lets define this color as part of the brand identity
+}
+
+.expandable-section[data-level="1"] {
+  border-top:none;
+}
+
+.expandable-section .page-link,
+.expandable-section>header,
+.faq .page-link, .faq>header{
+  font-size: 1.125rem; //18px font size
 }
 
 /* show side nav above this width*/
 @include media-breakpoint-up(md) {
-  .collapsed {
+  .sidenav-collapsed {
     display: block;
     position: relative;
     /* same width as sidebar */
-    margin-left: -25%;
+    margin-left: -16.6%;
   }
 }
 
@@ -62,7 +78,7 @@ ul li {
     transition: margin 0.3s ease;
     z-index: 999999;
   }
-  .collapsed { //expand display
+  .sidenav-collapsed { //expand display
     /* hide it for small displays*/
     display:block;
     transition: margin 0.3s ease;
