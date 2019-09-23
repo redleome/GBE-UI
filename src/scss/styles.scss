@@ -7,6 +7,7 @@ ul li {
   padding: 0;
 }
 // Navigation
+
 .navbar-nav {
   flex-direction: row;
 
@@ -27,9 +28,35 @@ ul li {
 #sidenav {
   /* for the animation */
   position: relative;
+  height:100%;
   border: solid;
   transition: margin 0.3s ease;
   overflow-y: scroll;
+
+  .card-body {
+    padding: 0 1.25rem 1rem;
+  }
+
+  a.card-header {
+    color: $black;
+  }
+
+  .link-list li a {
+    font-family: Telenor;
+    color: $black;
+    font-weight: 200;
+    font-size:1.125rem;
+  }
+  // Side Nave Expand
+  .expandable-section {
+    border-color: #dbdbdb; //Note: Lets define this color as part of the brand identity
+  }
+  .card.content-dropdown{
+    background:transparent;
+  }
+  .card-header{
+    font-size:1.125rem;
+  }
 }
 
 .col-md-4 {
@@ -40,18 +67,14 @@ ul li {
   display: none;
 }
 
-// Side Nave Expand
-.expandable-section, .faq{
-  border-color: #dbdbdb; //Note: Lets define this color as part of the brand identity
-}
-
 .expandable-section[data-level="1"] {
-  border-top:none;
+  border-top: none;
 }
 
 .expandable-section .page-link,
-.expandable-section>header,
-.faq .page-link, .faq>header{
+.expandable-section > header,
+.faq .page-link,
+.faq > header {
   font-size: 1.125rem; //18px font size
 }
 
@@ -64,12 +87,11 @@ ul li {
     margin-left: -16.6%;
   }
 }
-
 // for mobile, side nave stays on right side over the content
 @include media-breakpoint-down(md) {
   #sidenav {
     position: fixed;
-    color: #000 !important;
+    color: $black !important;
     top: 0;
     height: 100%;
     min-width: 100%;
@@ -78,10 +100,15 @@ ul li {
     transition: margin 0.3s ease;
     z-index: 999999;
   }
-  .sidenav-collapsed { //expand display
+
+  .sidenav-collapsed {
+    //expand display
     /* hide it for small displays*/
-    display:block;
+    display: block;
     transition: margin 0.3s ease;
     margin-left: -100% !important;
   }
 }
+
+
+//Components

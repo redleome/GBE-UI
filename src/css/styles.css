@@ -16,9 +16,25 @@ ul li {
 #sidenav {
   /* for the animation */
   position: relative;
+  height: 100%;
   border: solid;
   transition: margin 0.3s ease;
   overflow-y: scroll; }
+  #sidenav .card-body {
+    padding: 0 1.25rem 1rem; }
+  #sidenav a.card-header {
+    color: #000; }
+  #sidenav .link-list li a {
+    font-family: Telenor;
+    color: #000;
+    font-weight: 200;
+    font-size: 1.125rem; }
+  #sidenav .expandable-section {
+    border-color: #dbdbdb; }
+  #sidenav .card.content-dropdown {
+    background: transparent; }
+  #sidenav .card-header {
+    font-size: 1.125rem; }
 
 .col-md-4 {
   height: 300px; }
@@ -26,15 +42,13 @@ ul li {
 .sidenav-collapsed {
   display: none; }
 
-.expandable-section, .faq {
-  border-color: #dbdbdb; }
-
 .expandable-section[data-level="1"] {
   border-top: none; }
 
 .expandable-section .page-link,
 .expandable-section > header,
-.faq .page-link, .faq > header {
+.faq .page-link,
+.faq > header {
   font-size: 1.125rem; }
 
 /* show side nav above this width*/

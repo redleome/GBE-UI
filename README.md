@@ -50,12 +50,27 @@ Setup Reference:
 
 ## Fixed Common Bootstrap/SCSS Styleguide issues
 
-**Nav issue with dropdown menu **.
+**Nav issue with dropdown menu**
 
 The bug expands the entire horizontal menu when the dropdown is visible.
 Fix: https://github.com/twbs/bootstrap/issues/22270
 
-**Sidebar Nav reference **
+**Sidebar Nav reference**
 
 Hide/show sidenav, expand main content width
 Clue: https://cdn.rawgit.com/nunof07/bootstrap-collapsible-sidebar/v0.1.0/left.html
+
+
+--------------
+
+#Custom CSS
+
+There are several css/sass adjustments that had to be implemented for GBEAT.
+These styles doesn't match the Privacy Style Guide.
+
+Remove dropdown/accordion background color, reference, Telenor Norway.
+```
+.card.content-dropdown, .dropdown-toggle, .dropdown .dropdown-menu{
+      background-color: #f5f5f5; // Changed to transparent
+}
+```
